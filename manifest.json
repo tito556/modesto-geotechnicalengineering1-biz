@@ -11,5 +11,10 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "lang": "en",
+  "orientation": "portrait-secondary",
+  "scope": "/",
+  "description": "Professional geotechnical services in Modesto, USA. Soil studies, testing and technical consulting.",
+  "id": "/modesto-1319"
 }
