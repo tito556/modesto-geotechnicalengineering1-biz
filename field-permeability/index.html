@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -186,7 +222,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>ASTM D6391-11 (Standard Test Method for Field Measurement of Hydraulic Conductivity Limits), USBR 7310 (Permeability Tests in Boreholes Using Packers), NF P94-132 (Lefranc Test in Soils and Soft Rocks)</p></section>
 
-<section class="section"><h2>Quick answers</h2><details><summary>What is the difference between a Lefranc and a Lugeon test?</summary><p>The Lefranc test is used in soils and soft rocks under low to moderate pressure, measuring hydraulic conductivity via constant or falling head. The Lugeon test applies stepped water pressures to rock masses to evaluate joint permeability and groutability. In Modesto, the Lefranc method is typical for shallow alluvial deposits, while the Lugeon test is reserved for deeper cemented gravels or bedrock foundations.</p></details><details><summary>How long does a field permeability test take in Modesto?</summary><p>A single Lefranc test at one depth interval typically takes 2 to 4 hours including setup, saturation, and steady-state flow monitoring. A Lugeon test with 5 pressure steps may require 4 to 6 hours per test section. Multiple intervals per borehole extend the total field time accordingly. Our team coordinates with the drilling schedule to minimize project delays.</p></details><details><summary>What is the typical cost range for a field permeability test in Modesto?</summary><p>The cost for a field permeability test in Modesto generally falls between US$620 and US$980 per test interval. This includes mobilization of packer equipment, on-site testing by a certified technician, and a detailed report with K-values and pressure-log plots. Volume discounts apply when testing multiple intervals across a single borehole.</p></details><details><summary>Do I need a field permeability test if I already have grain size analysis?</summary><p>Grain size analysis provides an estimated permeability range using empirical formulas like Hazen's, but it cannot account for in-situ fabric, layering, or fractures. In Modesto's heterogeneous alluvial soils, actual field permeability can differ from estimated values by an order of magnitude. The field test gives a direct measurement essential for dewatering design, seepage modeling, and regulatory compliance.</p></details></section>
+<section class="section"><h2>Quick answers</h2><details><summary>What is the difference between a Lefranc and a Lugeon test?</summary><p>The Lefranc test is used in soils and soft rocks under low to moderate pressure, measuring hydraulic conductivity via constant or falling head. The Lugeon test applies stepped water pressures to rock masses to evaluate joint permeability and groutability. In Modesto, the Lefranc method is typical for shallow alluvial deposits, while the Lugeon test is reserved for deeper cemented gravels or bedrock <a href="/foundations/">foundations</a>.</p></details><details><summary>How long does a field permeability test take in Modesto?</summary><p>A single Lefranc test at one depth interval typically takes 2 to 4 hours including setup, saturation, and steady-state flow monitoring. A Lugeon test with 5 pressure steps may require 4 to 6 hours per test section. Multiple intervals per borehole extend the total field time accordingly. Our team coordinates with the drilling schedule to minimize project delays.</p></details><details><summary>What is the typical cost range for a field permeability test in Modesto?</summary><p>The cost for a field permeability test in Modesto generally falls between US$620 and US$980 per test interval. This includes mobilization of packer equipment, on-site testing by a certified technician, and a detailed report with K-values and pressure-log plots. Volume discounts apply when testing multiple intervals across a single borehole.</p></details><details><summary>Do I need a field permeability test if I already have grain size analysis?</summary><p>Grain size analysis provides an estimated permeability range using empirical formulas like Hazen's, but it cannot account for in-situ fabric, layering, or fractures. In Modesto's heterogeneous alluvial soils, actual field permeability can differ from estimated values by an order of magnitude. The field test gives a direct measurement essential for dewatering design, seepage modeling, and regulatory compliance.</p></details></section>
 
 
 

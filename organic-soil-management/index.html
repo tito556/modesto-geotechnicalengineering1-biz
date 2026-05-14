@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +220,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Standards that apply</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASTM D2974 (Moisture, Ash, and Organic Matter of Peat), ASTM D4427 (Classification of Peat Samples), ASTM D1997 (Fiber Content of Peat), ASTM D2434 (Permeability of Granular Soils), IBC Chapter 18 (Soils and Foundations)</p></section>
+<p>ASTM D2974 (Moisture, Ash, and Organic Matter of Peat), ASTM D4427 (Classification of Peat Samples), ASTM D1997 (Fiber Content of Peat), ASTM D2434 (Permeability of Granular Soils), IBC Chapter 18 (Soils and <a href="/foundations/">Foundations</a>)</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>How deep do organic soils typically extend in Modesto?</summary><p>In the riparian corridors near the Tuolumne River, peat and muck layers range from 0.5 to 3.5 meters deep. In the central grid, organic content is usually limited to the top 1 meter. We confirm depth with continuous sampling during the site investigation.</p></details><details><summary>Can I build directly on organic soil without removal?</summary><p>It depends on the organic content and the load. For light structures like sidewalks or single-story sheds, we sometimes allow fill surcharge and prolonged preloading. For any building with a foundation load above 50 kPa, removal or deep foundations are the standard approach in Modesto.</p></details><details><summary>How much does organic soil management cost in Modesto?</summary><p>A full organic characterization including field sampling, laboratory tests, and a settlement analysis report ranges between US$790 and US$2,850. The final price depends on the number of test pits and the depth of the organic layers.</p></details><details><summary>What is the difference between organic soil and peat?</summary><p>Per ASTM D4427, peat must have more than 75 percent organic matter by dry weight. Organic soil has between 5 and 75 percent. In Modesto, the dark fibrous material you see near the river is peat; the softer black layer in the older farm fields is usually organic clay or silt.</p></details><details><summary>Do organic soils in Modesto cause differential settlement?</summary><p>Yes, and it is common. Organic deposits are rarely uniform in thickness or decomposition degree across a single lot. One corner of the building might be on 1.5 meters of peat while the opposite corner sits on stiff clay. That difference can produce 5 to 10 centimeters of differential movement if not addressed in the design.</p></details></section>
 

@@ -114,6 +114,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -174,7 +210,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>ASCE 7-16 (Seismic Design, Chapter 11 & 12), IBC 2018 (Chapter 18, Soils and Foundations), ASTM D1586-18 (<a href="../standard-penetration/" data-interlink="1">Standard Penetration Test</a>), FHWA-NHI-10-016 (Drilled and Grouted Anchors)</p></section>
 
-<section class="section"><h2>Quick answers</h2><details><summary>What is the difference between active and passive anchors?</summary><p>Active anchors are pre-stressed after installation, applying a permanent compression force to the ground. Passive anchors (soil nails, helical piles) are not pre-stressed; they resist movement only after the ground begins to deform. Active anchors are used where immediate support is needed; passive anchors work well in slopes and temporary excavations.</p></details><details><summary>How do Modesto's soil conditions affect anchor bond length?</summary><p>Modesto's alluvial soils vary widely: loose sands near the surface require longer bond zones (20–30 ft) to achieve 100-kip capacity, while stiff clays at 40 ft depth can achieve the same capacity with 15 ft of bond. Groundwater also reduces bond stress in silt layers. We always run a site investigation before sizing the anchor.</p></details><details><summary>What testing is required for permanent anchors in Modesto?</summary><p>Per IBC 2018, permanent anchors must pass a proof test to 133% of the design load and a creep test over 60 minutes. We also perform a sacrificial test anchor at the site to verify bond stress before production. All testing follows ASTM D1143 and ASTM D3689.</p></details><details><summary>How much does an anchor design study cost in Modesto?</summary><p>The cost for a full anchor design (including field investigation, bond zone calculation, and testing plan) typically ranges from US$910 to US$3,260, depending on the number of anchors, site accessibility, and the required seismic analysis. A preliminary desktop study for a single wall may start around $910.</p></details><details><summary>Can anchors be installed in high groundwater conditions?</summary><p>Yes, but special measures are needed. For active anchors, we specify a corrosion-protected tendon and a watertight grout mix. For passive soil nails, we install a drainage system behind the wall to prevent hydrostatic pressure buildup. In Modesto, where the water table is shallow, we also check for liquefaction during the design life.</p></details></section>
+<section class="section"><h2>Quick answers</h2><details><summary>What is the difference between active and passive anchors?</summary><p>Active anchors are pre-stressed after installation, applying a permanent compression force to the ground. Passive anchors (soil nails, helical piles) are not pre-stressed; they resist movement only after the ground begins to deform. Active anchors are used where immediate support is needed; passive anchors work well in slopes and temporary excavations.</p></details><details><summary>How do Modesto's soil conditions affect anchor bond length?</summary><p>Modesto's alluvial soils vary widely: loose sands near the surface require longer bond zones (20–30 ft) to achieve 100-kip capacity, while stiff clays at 40 ft depth can achieve the same capacity with 15 ft of bond. Groundwater also reduces bond stress in silt layers. We always run a site investigation before sizing the anchor.</p></details><details><summary>What testing is required for permanent anchors in Modesto?</summary><p>Per IBC 2018, permanent anchors must pass a proof test to 133% of the design load and a creep test over 60 minutes. We also perform a sacrificial test anchor at the site to verify bond stress before production. All testing follows ASTM D1143 and ASTM D3689.</p></details><details><summary>How much does an anchor design study cost in Modesto?</summary><p>The cost for a full anchor design (including field investigation, bond zone calculation, and testing plan) typically ranges from US$910 to US$3,260, depending on the number of anchors, site accessibility, and the required <a href="/seismic/">seismic</a> analysis. A preliminary desktop study for a single wall may start around $910.</p></details><details><summary>Can anchors be installed in high groundwater conditions?</summary><p>Yes, but special measures are needed. For active anchors, we specify a corrosion-protected tendon and a watertight grout mix. For passive soil nails, we install a drainage system behind the wall to prevent hydrostatic pressure buildup. In Modesto, where the water table is shallow, we also check for liquefaction during the design life.</p></details></section>
 
 
 

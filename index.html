@@ -113,6 +113,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -191,7 +227,7 @@ Seismic hazards in the region are moderate, with potential ground shaking from f
 
 <section class="section"><h2>Standards that apply</h2><p>All geotechnical work in Modesto follows U.S. standards to ensure safety and performance. We reference ASTM D1586 for Standard Penetration Testing, ASTM D2487 for <a href="soil-classification/" data-interlink="1">soil classification</a>, and ASTM D4318 for Atterberg limits. Foundation designs comply with ASCE 7-22 for seismic loads and the International Building Code (IBC 2021), while pavement recommendations align with AASHTO Guide for Design of Pavement Structures. Our reports integrate these standards to deliver defensible, actionable results.</p></section>
 
-<section class="section"><h2>Quick answers</h2><details><summary>What are typical foundation challenges in Modesto’s soils?</summary><p>Modesto’s silty clays and clayey silts can exhibit moderate shrink-swell potential, especially during dry summers and wet winters. Shallow groundwater may require dewatering for excavations. For residential projects, post-tensioned slabs or deep foundations are often recommended. Our site-specific testing determines soil strength and consolidation behavior to guide design.</p></details><details><summary>How does seasonal groundwater affect construction in Modesto?</summary><p>Groundwater levels in Modesto fluctuate with irrigation and rainfall, typically rising within 10–20 feet of the surface. This can impact basement excavations, utility trenches, and foundation bearing capacity. We monitor seasonal variations and recommend appropriate drainage or water control measures to maintain safety and project timelines.</p></details><details><summary>What seismic design considerations apply in Modesto?</summary><p>Modesto falls under Seismic Design Category C per IBC 2021, requiring moderate seismic detailing. Site class determination via shear wave velocity or SPT data is essential. Liquefaction risk is generally low, but we evaluate sand lenses for potential settlement. Our reports provide site-specific spectral accelerations and soil amplification factors for structural engineers.</p></details><details><summary>What is the typical timeline for a geotechnical investigation in Modesto?</summary><p>A standard investigation for a single-family lot takes 2–3 weeks from drilling to report delivery. Larger commercial projects may require 4–6 weeks depending on scope, including borings, lab testing, and engineering analysis. We coordinate with property owners and contractors to minimize delays and provide preliminary guidance early in design.</p></details></section>
+<section class="section"><h2>Quick answers</h2><details><summary>What are typical foundation challenges in Modesto’s soils?</summary><p>Modesto’s silty clays and clayey silts can exhibit moderate shrink-swell potential, especially during dry summers and wet winters. Shallow groundwater may require dewatering for excavations. For residential projects, post-tensioned slabs or deep <a href="/foundations/">foundations</a> are often recommended. Our site-specific testing determines soil strength and consolidation behavior to guide design.</p></details><details><summary>How does seasonal groundwater affect construction in Modesto?</summary><p>Groundwater levels in Modesto fluctuate with irrigation and rainfall, typically rising within 10–20 feet of the surface. This can impact basement excavations, utility trenches, and foundation bearing capacity. We monitor seasonal variations and recommend appropriate drainage or water control measures to maintain safety and project timelines.</p></details><details><summary>What seismic design considerations apply in Modesto?</summary><p>Modesto falls under Seismic Design Category C per IBC 2021, requiring moderate seismic detailing. Site class determination via shear wave velocity or SPT data is essential. Liquefaction risk is generally low, but we evaluate sand lenses for potential settlement. Our reports provide site-specific spectral accelerations and soil amplification factors for structural engineers.</p></details><details><summary>What is the typical timeline for a geotechnical investigation in Modesto?</summary><p>A standard investigation for a single-family lot takes 2–3 weeks from drilling to report delivery. Larger commercial projects may require 4–6 weeks depending on scope, including borings, lab testing, and engineering analysis. We coordinate with property owners and contractors to minimize delays and provide preliminary guidance early in design.</p></details></section>
 
 
 

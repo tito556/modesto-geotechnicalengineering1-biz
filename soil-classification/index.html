@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -135,7 +171,7 @@ header.hero, .hero { position: relative !important; }
     <a class="hero-cta" href="#main-content">DISCOVER →</a>
 </div></header>
 
-<section id="main-content" class="section"><p>The alluvial terraces of the Stanislaus River and Tuolumne River define Modesto's subsurface profile: interbedded sands, silts, and clays with occasional gravel lenses. Groundwater typically sits between 10 and 25 feet, though seasonal fluctuations can push it higher near the river corridors. For any project here — a warehouse on Carpenter Road or a residential slab in the La Loma district — the first step is reliable soil classification. We follow ASTM D2487 (USCS) and AASHTO M 145 to group soils by grain size and plasticity. Knowing whether you are dealing with a well-graded sand (SW) or a lean clay (CL) directly affects bearing capacity estimates and compaction specs. Our work begins with field sampling and visual description per ASTM D2488, then laboratory sieving and Atterberg limits to assign the final classification. Before moving to foundation design, we often combine the classification with a georradar-gpr survey to map lateral variability across the site.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/clasificacion-suelos-1.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Soil classification (USCS/AASHTO) in Modesto" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #F43F5E;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">A single USCS symbol like CH or SM tells the foundation engineer more about settlement risk than five pages of raw sieve data.</blockquote></section>
+<section id="main-content" class="section"><p>The alluvial terraces of the Stanislaus River and Tuolumne River define Modesto's subsurface profile: interbedded sands, silts, and clays with occasional gravel lenses. Groundwater typically sits between 10 and 25 feet, though seasonal fluctuations can push it higher near the river corridors. For any project here — a warehouse on Carpenter Road or a residential slab in the La Loma district — the first step is reliable soil classification. We follow ASTM D2487 (USCS) and AASHTO M 145 to group soils by grain size and plasticity. Knowing whether you are dealing with a well-graded sand (SW) or a lean clay (CL) directly affects bearing capacity estimates and compaction specs. Our work begins with field sampling and visual description per ASTM D2488, then <a href="/laboratory/">laboratory</a> sieving and Atterberg limits to assign the final classification. Before moving to foundation design, we often combine the classification with a georradar-gpr survey to map lateral variability across the site.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/clasificacion-suelos-1.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Soil classification (USCS/AASHTO) in Modesto" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure><blockquote style="border-left:4px solid #F43F5E;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">A single USCS symbol like CH or SM tells the foundation engineer more about settlement risk than five pages of raw sieve data.</blockquote></section>
 
 
 

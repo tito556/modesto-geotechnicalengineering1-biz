@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -184,7 +220,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="section"><h2>Standards that apply</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>ASCE 7‑22 – Minimum Design Loads (debris load provisions), California Building Code (CBC 2022) Chapter 18 – Soils and Foundations, FHWA‑HIF‑12‑004 – Debris Flow Analysis Methods (USDA/FS guidelines), ASTM D2487 – Standard Practice for Classification of Soils for Engineering Purposes, FEMA P‑259 – Engineering Principles and Practices for Retrofitting Flood‑Prone Structures</p></section>
+<p>ASCE 7‑22 – Minimum Design Loads (debris load provisions), California Building Code (CBC 2022) Chapter 18 – Soils and <a href="/foundations/">Foundations</a>, FHWA‑HIF‑12‑004 – Debris Flow Analysis Methods (USDA/FS guidelines), ASTM D2487 – Standard Practice for Classification of Soils for Engineering Purposes, FEMA P‑259 – Engineering Principles and Practices for Retrofitting Flood‑Prone Structures</p></section>
 
 <section class="section"><h2>Quick answers</h2><details><summary>What is the difference between a debris flow and a mudslide?</summary><p>A debris flow is a fast‑moving mixture of rock, soil, water, and organic material that behaves like a viscous fluid, typically confined to channels. A mudslide (or mudflow) has a higher water content and less coarse material. Debris flows carry boulders and can exceed 30 mph, while mudslides are slower and more cohesive. Our analysis distinguishes both mechanisms and models the appropriate rheology.</p></details><details><summary>How much does a debris flow analysis cost in Modesto?</summary><p>The cost for a typical residential or small commercial site in Modesto ranges from US$1.130 to US$3.700, depending on watershed size, complexity of the terrain, and whether post‑fire conditions are involved. This includes field work, modeling, and a report ready for permit submission. Larger subdivisions or multi‑basin studies are quoted separately.</p></details><details><summary>Do I need a debris flow study for a building permit in Modesto?</summary><p>It depends on the site location. If your property is within or adjacent to a FEMA‑designated alluvial fan or a CalFire Very High Fire Hazard Severity Zone, the county typically requires a geotechnical report that addresses debris flow. We recommend a preliminary screening before you submit your grading plan to avoid delays.</p></details><details><summary>How long does the analysis take from start to finish?</summary><p>A standard debris flow analysis takes 3 to 5 weeks. Field reconnaissance and sample collection take the first week; modeling and report writing take the remaining time. If you are on a tight schedule, we can expedite the fieldwork and deliver a preliminary hazard map in 2 weeks.</p></details></section>
 
