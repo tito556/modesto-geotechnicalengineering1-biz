@@ -3,7 +3,7 @@
   "short_name": "Modesto",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#0A2540",
+  "theme_color": "#4B0082",
   "background_color": "#FFFFFF",
   "icons": [
     {
